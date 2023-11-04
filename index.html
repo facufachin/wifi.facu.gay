@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WiFi Parroquial</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <h1>WiFi Parroquial</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Red WiFi</th>
+          <th>Contraseña</th>
+          <th>Copiar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LabOficina</td>
+          <td>RamosLab2022</td>
+          <td>
+            <button
+              class="copy-button"
+              onclick="copyToClipboard('RamosLab2022')"
+            >
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Taller</td>
+          <td>Plantabaja2022</td>
+          <td>
+            <button
+              class="copy-button"
+              onclick="copyToClipboard('Plantabaja2022')"
+            >
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>ACUARIO</td>
+          <td>06021969</td>
+          <td>
+            <button class="copy-button" onclick="copyToClipboard('06021969')">
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>ACUARIO-5GHz</td>
+          <td>06021969</td>
+          <td>
+            <button class="copy-button" onclick="copyToClipboard('06021969')">
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Alice in WonderLAN</td>
+          <td>b3_qui3t!</td>
+          <td>
+            <button class="copy-button" onclick="copyToClipboard('b3_qui3t!')">
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>MovistarFibra-815A30</td>
+          <td>speedy2022</td>
+          <td>
+            <button class="copy-button" onclick="copyToClipboard('speedy2022')">
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>WIFI Parroquial</td>
+          <td>Jesus85841444</td>
+          <td>
+            <button
+              class="copy-button"
+              onclick="copyToClipboard('Jesus85841444')"
+            >
+              Copiar Contraseña
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="index.js"></script>
+    <script>
+      navigator.serviceWorker.register("/service-worker.js");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+body {
+  font-family: "FiraCode-Medium";
+  background-color: #282a36;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-family: "FiraCode-Bold";
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  background-color: #44475a;
+  border-bottom: 1px solid #44475a;
+  font-family: "FiraCode-Medium";
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #44475a;
+  font-family: "FiraCode-Medium";
+}
+
+tr:hover {
+  background-color: #4e5b83;
+}
+
+.copy-button {
+  background-color: #bd93f9;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-family: "FiraCode-Medium";
+}
+
+@font-face {
+  font-family: "FiraCode-Bold";
+  src: url("Fonts/FiraCode-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FiraCode-Medium";
+  src: url("Fonts/FiraCode-Medium.ttf") format("truetype");
+}
