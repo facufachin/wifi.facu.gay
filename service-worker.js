@@ -1,10 +1,10 @@
 const addResourcesToCache = async (resources) => {
-    const cache = await caches.open("v8");
+    const cache = await caches.open("v9");
     await cache.addAll(resources);
   };
   
   const putInCache = async (request, response) => {
-    const cache = await caches.open("v8");
+    const cache = await caches.open("v9");
     await cache.put(request, response);
   };
   
@@ -59,6 +59,7 @@ const addResourcesToCache = async (resources) => {
         "/Fonts/FiraCode-Bold.ttf",
         "/Fonts/FiraCode-Medium.ttf"
         ]),
+    self.skipwaiting();
     );
   });
   
@@ -77,7 +78,7 @@ const addResourcesToCache = async (resources) => {
   };
 
   const deleteOldCaches = async () => {
-    const cacheKeepList = ["v8"];
+    const cacheKeepList = ["v9"];
     const keyList = await caches.keys();
     const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
     await Promise.all(cachesToDelete.map(deleteCache));
