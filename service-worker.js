@@ -1,10 +1,10 @@
 const addResourcesToCache = async (resources) => {
-    const cache = await caches.open("v9");
+    const cache = await caches.open("v10");
     await cache.addAll(resources);
   };
   
   const putInCache = async (request, response) => {
-    const cache = await caches.open("v9");
+    const cache = await caches.open("v10");
     await cache.put(request, response);
   };
   
@@ -78,7 +78,7 @@ const addResourcesToCache = async (resources) => {
   };
 
   const deleteOldCaches = async () => {
-    const cacheKeepList = ["v9"];
+    const cacheKeepList = ["v10"];
     const keyList = await caches.keys();
     const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
     await Promise.all(cachesToDelete.map(deleteCache));

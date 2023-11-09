@@ -7,6 +7,10 @@ body {
   animation-fill-mode: forwards;
 }
 
+p {
+  text-align: center;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
